@@ -30,7 +30,7 @@ export default Lista
 
 const styles = StyleSheet.create({
     itemList: {
-        backgroundColor: colors.brown,
+        backgroundColor: 'purple',
         width: '95%',
         padding: 20,
         flex: 0.8,
