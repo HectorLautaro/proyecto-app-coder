@@ -18,7 +18,7 @@ const Header = ({handleAdd}) => {
         <View style={styles.topContainer}>
             <TextInput
                 style={styles.input}
-                placeholder="Add todo"
+                placeholder="Agregar a la lista de compras"
                 onChangeText={setInput}
                 value={input}
             />
@@ -40,11 +40,11 @@ const styles = StyleSheet.create({
     input: {
         borderRadius: 8,
         borderWidth: 2,
-        width: 200,
+        width: 250,
         marginRight: 10,
         paddingHorizontal: 8,
         fontSize: 18,
         height: 35,
-        backgroundColor: colors.gray
+        backgroundColor: colors.gray,
     },
 })

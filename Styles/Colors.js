@@ -3,4 +3,5 @@ export const colors = {
     white: '#FCFFE7',
     brown: '#DEA057',
     darkBrown: '#CE9461',
+    pink: '#E8275F',
 }

@@ -5,7 +5,7 @@ import { colors } from '../Styles/Colors'
 const ButtonCustom = ({onPress}) => {
     return (
         <TouchableOpacity style={styles.button} onPress={onPress}>
-            <Text style={styles.text}>Add todo</Text>
+            <Text style={styles.text}>Agregar</Text>
         </TouchableOpacity>
     )
 }
@@ -14,7 +14,7 @@ export default ButtonCustom
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: colors.darkBrown,
+        backgroundColor: 'black',
         paddingHorizontal: 10,
         paddingVertical: 5,
         borderRadius: 10,
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        color: colors.gray,
+        color: colors.pink,
     }
 })
