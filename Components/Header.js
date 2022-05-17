@@ -1,50 +1,27 @@
-import { StyleSheet, TextInput, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import ButtonCustom from './Button'
-import { colors } from '../Styles/Colors';
+import { colors } from '../Styles/colors'
 
-const Header = ({handleAdd}) => {
-
-    const [input, setInput] = React.useState("");
-
-    const handleAddAux = () => {
-        if (input !== ""){
-            handleAdd(input)
-            setInput("");
-        }
-    }
-
-    return (
-        <View style={styles.topContainer}>
-            <TextInput
-                style={styles.input}
-                placeholder="Agregar a la lista de compras"
-                onChangeText={setInput}
-                value={input}
-            />
-            <ButtonCustom onPress={()=> handleAddAux()} />
-        </View>
-    )
+const Header = ({title = "E-commerce"}) => {
+  return (
+    <View style={styles.container} >
+      <Text style={styles.text}>{title}</Text>
+    </View>
+  )
 }
 
 export default Header
 
 const styles = StyleSheet.create({
-    topContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
+    container: {
+        backgroundColor: colors.darkBlue,
+        height: 80,
+        width: '100%',
+        justifyContent: 'center',
         alignItems: 'center',
-        padding: 10,
-        flex: 0.2,
     },
-    input: {
-        borderRadius: 8,
-        borderWidth: 2,
-        width: 250,
-        marginRight: 10,
-        paddingHorizontal: 8,
-        fontSize: 18,
-        height: 35,
-        backgroundColor: colors.gray,
-    },
+    text: {
+        fontSize: 20,
+        fontFamily: 'Koulen'
+    }
 })
